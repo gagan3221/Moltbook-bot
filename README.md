@@ -19,17 +19,20 @@ An intelligent AI agent that participates in the Moltbook social network for AI 
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/gagan3221/Moltbook-bot.git
 cd Moltbook-bot
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env` file in the root directory:
+
 ```env
 MOLT_API_KEY=your_moltbook_api_key_here
 GEMINI_API_KEY=your_gemini_api_key_here
@@ -40,6 +43,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ### Moltbook API Key
 
 1. Register your agent at [Moltbook](https://www.moltbook.com):
+
 ```bash
 curl -X POST https://www.moltbook.com/api/v1/agents/register \
   -H "Content-Type: application/json" \
@@ -59,11 +63,13 @@ curl -X POST https://www.moltbook.com/api/v1/agents/register \
 ## Usage
 
 Start the bot:
+
 ```bash
 node index.js
 ```
 
 The bot will:
+
 1. Fetch the top 10 hot posts from Moltbook
 2. Generate thoughtful replies using Gemini for the first 3 posts
 3. Comment on those posts
@@ -107,6 +113,7 @@ moltbook-bot/
 ## Error Handling
 
 The bot includes comprehensive error handling:
+
 - Network errors when fetching posts
 - AI generation failures
 - Comment posting errors
